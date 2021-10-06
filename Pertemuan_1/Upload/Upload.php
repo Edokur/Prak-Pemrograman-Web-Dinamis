@@ -2,7 +2,7 @@
 $lokasi_file = $_FILES['fupload']['tmp_name'];
 $nama_file = $_FILES['fupload']['name'];
 $deskripsi = $_POST['deskripsi'];
-$direktori = "c:/xampp/htdocs/Prak_PWD/Upload/$nama_file";
+$direktori = "c:/xampp/htdocs/Prak_PWD/Pertemuan_1/Upload/$nama_file";
 if (move_uploaded_file($lokasi_file, $direktori)){
     echo "Nama File: <b>$nama_file</b> berhasil di upload <br>";
     echo "Deskripsi File :<br>$deskripsi";
